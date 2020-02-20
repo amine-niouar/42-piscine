@@ -9,8 +9,12 @@
 /*   Updated: 2017/07/06 08:38:15 by vtouffet         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include <unistd.h>
+void	ft_putchar(char c)
+{
+     write(1,&c,1);	
+}
 
-void	ft_putchar(char c);
 
 void	display(int nb)
 {
